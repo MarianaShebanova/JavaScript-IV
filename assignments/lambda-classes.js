@@ -36,7 +36,9 @@ class Student extends Person {
     }
 
     listsSubjects() {
-        console.log(this.favSubjects);
+        this.favSubjects.forEach(function (element) {
+            console.log(element);
+        });
     }
 
     PRAssignment(subject) {
@@ -81,12 +83,12 @@ const bob = new Instructor({
 });
 
 const jack = new Student({
-    name: 'Jek',
-    location: 'Bedrock',
+    name: "Jek",
+    location: "Bedrock",
     age: 37,
-    favLanguage: 'JavaScript',
-    className: 'Front-end',
-    favSubjects: `Don't forget the homies`
+    favLanguage: "JavaScript",
+    className: "Front-end",
+    favSubjects: ["Don't forget the homies", "Aga"]
 });
 
 const lola = new ProjectManagers({
